@@ -1,0 +1,78 @@
+
+  body {
+  background-image: url("bg.jpg");
+  background-size: cover;
+  background-repeat:no-repeat;
+  height: 100vh;
+  overflow-y:hidden;
+  background-attachment: fixed;
+}
+
+.card {
+  width: 400px;
+  margin: 20px auto 0 auto;
+  position: relative;
+}
+
+.player-container {
+  width: 400px;
+  margin: 20px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 5px 30px 0 30px;
+}
+
+.title-bar, .menu-bar, .progress-bar, .player-controls {
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.title-bar p, .menu-bar p, .progress-bar p, .player-controls p {
+  text-transform: uppercase;
+}
+
+.progress-bar {
+  font-size: 0.8em;
+  margin-top: 2px;
+}
+
+.progress-bar p {
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.card.large {
+  height: 550px;
+}
+
+.breath {
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.songs li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 400px) {
+  .card {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .card.large {
+    height: 500px;
+  }
+}
